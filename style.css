@@ -332,3 +332,123 @@ body {
         font-size: 32px;
     }
 }
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    #juegoContent {
+        gap: 4px;
+        padding: 6px;
+    }
+
+    .blok {
+        grid-template-columns: repeat(3, 45px);
+        grid-template-rows: repeat(3, 45px);
+        gap: 2px;
+    }
+
+    .celda {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    .card-form {
+        width: 350px;
+        padding: 25px;
+    }
+
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+
+    #juegoContent {
+        gap: 3px;
+        padding: 5px;
+        border-width: 2px;
+    }
+
+    .blok {
+        grid-template-columns: repeat(3, 32px);
+        grid-template-rows: repeat(3, 32px);
+        gap: 1px;
+    }
+
+    .celda {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+    }
+
+    .oportunidades {
+        font-size: 17px;
+    }
+
+    .card-form {
+        width: calc(100% - 30px);
+        max-width: 380px;
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+    .card-form h2 {
+        font-size: 21px;
+        margin-bottom: 15px;
+    }
+
+    .card-form input {
+        height: 42px;
+        font-size: 14px;
+    }
+
+    .card-form button {
+        height: 42px;
+    }
+
+    .fila {
+        gap: 8px;
+    }
+
+}
+
+
+/* =========================
+   CELULAR MUY CHICO
+========================= */
+
+@media (max-width: 400px) {
+
+    #juegoContent {
+        gap: 2px;
+        padding: 4px;
+    }
+
+    .blok {
+        grid-template-columns: repeat(3, 28px);
+        grid-template-rows: repeat(3, 28px);
+    }
+
+    .celda {
+        width: 28px;
+        height: 28px;
+        font-size: 14px;
+    }
+
+    .oportunidades {
+        font-size: 16px;
+    }
+
+    .card-form {
+        width: calc(100% - 20px);
+        padding: 16px;
+    }
+
+}
